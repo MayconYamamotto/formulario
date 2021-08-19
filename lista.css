@@ -1,0 +1,41 @@
+html {
+    background: #F5F6FA;
+}
+.table {
+    margin-top: 4rem;
+    width: 100%;
+    border: none;
+    border-spacing: 0 0.8rem;
+} 
+
+.table>:not(caption)>*>* {
+    padding: 0.5rem 0.5rem;
+}
+
+.table td, th {
+    text-align: left;
+    font: normal normal 500 normal 1.6rem "Inter", sans-serif;
+}
+
+.table tbody {
+    background: #fff;
+    vertical-align: middle!important;
+}
+.table tbody tr {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    border-radius: 0.6rem;
+}
+
+tr th:first-child, tr td:first-child {
+    
+    border-radius: 0.6rem 0 0 0.6rem;
+}
+
+tr th:last-child, tr td:last-child {
+    
+    border-radius: 0 0.6rem  0.6rem 0;
+}
+
+.table tbody tr th, td {
+    padding: 1rem;
+}

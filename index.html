@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="content">
+        <header>
+            <nav>
+                <a href="index.html">Logo</a>
+                <div class="nav">
+                    <a href="#cliente">Cliente</a>
+                    <a href="#endereco">Endereço</a>
+                    <a href="#contato">Contato</a>
+                    <a href="#login">Login</a>
+                    <a href="#preferencias">Preferências</a>
+                    
+                    <a href="lista.html">Lista</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="container">
+
+                <form action="sucesso.html">
+                    <fieldset class="cliente" id="cliente">
+                        <h1 class="mb-3">Cadastrar Cliente</h1>
+                        <div>
+                            <input type="hidden" placeholder="id" value="">
+                        </div>
+                        <div class="flex">
+
+                            <div class="input-group mb-3 col-5 mr-1">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" class="form-control" name="nome" placeholder="Nome"
+                                    required autofocus>
+                            </div>
+
+                            <div class="input-group mb-3  col-5 ml-1">
+                                <label for="sobrenome">Sobrenome</label>
+                                <input type="text" id="sobrenome" class="form-control" name="sobrenome"
+                                    placeholder="Sobrenome">
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <label for="dataNascimento">Data de nascimento</label>
+                            <input type="date" id="dataNascimento" class="form-control" name="dataNascimento"
+                                placeholder="Data de Nascimento">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <label for="idade">Idade</label>
+                            <input type="number" id="idade" class="form-control" name="idade" placeholder="Idade"
+                                minlength="18">
+                        </div>
+
+                        <div class="radio-group mb-3">
+                            <label for="sexo">Sexo</label>
+
+                            <select id="sexo">
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <label for="img" class="mb-1">Foto de perfil</label>
+                            <input type="file" id="img" class="form-control-file" name="img">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="endereco" id="endereco">
+                        <h1 class="mb-3">Cadastrar endereço</h1>
+                        <div class="flex">
+                            <div class="input-group mb-3 mr-1 col-8">
+                                <label for="logradouro">Logradouro</label>
+                                <input type="text" id="logradouro" class="form-control" name="logradouro"
+                                    placeholder="Logradouro" required>
+                            </div>
+                            <div class="input-group mb-3 ml-1 col-2">
+                                <label for="numero">Número</label>
+                                <input type="number" id="numero" class="form-control" name="numero" placeholder="Número"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" id="complemento" class="form-control" name="complemento"
+                                placeholder="Complemento" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label for="cidade">Cidade</label>
+
+                            <select id="cidade" required>
+                                <option value="" disabled selected>Selecione uma cidade</option>
+                                <option value="tubarao">Tubarão</option>
+                                <option value="florianopolis">Florianópolis</option>
+                                <option value="blumenau">Blumenau</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label for="estado">Estado</label>
+                            <input type="text" id="estado" class="form-control" name="estado" placeholder="Estado"
+                                value="Santa Catarina" readonly>
+                        </div>
+
+                    </fieldset>
+                    <fieldset class="contato" id="contato">
+                        <h1 class="mb-3">Cadastrar contato</h1>
+
+                        <div class="input-group mb-3">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" class="form-control" name="telefone" placeholder="Telefone"
+                                required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" name="email" placeholder="Email"
+                                required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label for="site">Site pessoal</label>
+                            <input type="url" id="site" class="form-control" name="site" placeholder="Site pessoal"
+                                value="https://" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label for="cidade">Cidade</label>
+
+                            <select id="cidade" required>
+                                <option value="" disabled selected>Selecione uma cidade</option>
+                                <option value="tubarao">Tubarão</option>
+                                <option value="florianopolis">Florianópolis</option>
+                                <option value="blumenau">Blumenau</option>
+                            </select>
+                        </div>
+                        <div class="checkbox-group mb-3">
+                            <div class="checkbox">
+                                <input id="promo" type="checkbox">
+                                <label for="promo">Quer receber promoções via Email e SMS?</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="login" id="login">
+                        <h1 class="mb-3">Cadastrar login</h1>
+
+                        <div class="input-group mb-3">
+                            <label for="usuario">Nome de usuário</label>
+                            <input type="text" id="usuario" class="form-control" name="usuario"
+                                placeholder="Nome de usuário" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" class="form-control" name="senha" placeholder="Senha"
+                                required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label for="senhaR">Repetir senha</label>
+                            <input type="password" id="senhaR" class="form-control" placeholder="Repetir senha"
+                                required>
+                        </div>
+                        <div class="checkbox-group mb-3">
+                            <div class="checkbox">
+                                <input id="termos" type="checkbox">
+                                <label for="termos">Aceitar termos de uso</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="preferencias" id="preferencias">
+                        <h1 class="mb-3">Cadastrar preferencias</h1>
+
+                        <div class="input-group mb-3">
+                            <label for="cor" class="mb-1">Cor favorita</label>
+                            <input type="color" id="cor" class="form-control-color" name="cor" value="#67159C">
+                        </div>
+
+                        <div class="checkbox-group mb-3">
+                            <label class="mb-1">O que você mais gosta de comprar?</label>
+                            <div class="checkbox">
+                                <input id="compra1" type="checkbox">
+                                <label for="compra1">Compra 1</label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="compra2" type="checkbox">
+                                <label for="compra2">Compra 2</label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="compra3" type="checkbox">
+                                <label for="compra3">Compra 3</label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="compra4" type="checkbox">
+                                <label for="compra4">Compra 4</label>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label for="mes">Mês que mais gosta de comprar</label>
+                            <input type="month" id="mes" class="form-control" name="mes">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="acoes mb-3">
+                        <button type="reset" class="btn btn-danger">Limpar</button>
+                        <button type="submit" class="btn btn-success">Salvar</button>
+                    </fieldset>
+
+                </form>
+
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>

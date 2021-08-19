@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  background: #fff;
+  font: normal normal 400 normal 1rem "Inter", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". main ."
+    ". . .";
+    height: 100vh;
+}
+
+main {
+  grid-area: main;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+main img {
+    margin-bottom: 2rem;
+}
+
+main h1 {
+    font-size: 4.2rem;
+    color: #1E1E26;
+}
+
+main a {
+    margin-top: 3rem;
+    font: normal normal 800 normal 1.6rem "Inter", sans-serif;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.6rem;
+    background-color: #e5f2ff;
+    color: #0d6efd;
+    padding: 1.2rem;
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
